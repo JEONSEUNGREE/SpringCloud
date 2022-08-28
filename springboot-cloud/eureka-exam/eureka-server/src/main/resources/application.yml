@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+
+# 유레카 서버 역할을 할 어플리케이션인데
+# 이 유레카 서버가 클라이언트로 등록 될수도있기에 이 서버를 클라이언트로 사용되지 않도록 하기위함
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
